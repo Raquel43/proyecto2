@@ -268,3 +268,42 @@ iframe{
 }
   
 }
+
+@media (max-width: 650px) {
+  main img {
+    width: 50%;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  main p {
+    margin-right: 200px;
+  }
+
+  footer{
+  display: block;
+    height: auto;
+  }
+nav{
+  height: auto;
+}
+
+  nav ul li {
+    display: block;
+  }
+
+  .espacio{position: absolute; left: 0; top: 120px;}
+
+  fieldset {
+    width: 50%;
+    margin-left: 30px;
+  }
+  textarea {
+width: 300px;
+  }
+  iframe{
+    width: 300px;
+  }
+}
+

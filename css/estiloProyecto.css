@@ -263,4 +263,12 @@ footer .creado-por a:hover {text-decoration: underline;}
 	header .barra-busqueda {
 		width: 100%;
 	}
+
+	nav{
+		height: auto;
+	  }
+	  
+		nav ul li {
+		  display: block;
+		}
 }

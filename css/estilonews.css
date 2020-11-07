@@ -220,12 +220,13 @@ p {
   #grid-container {
     max-width: 450px;
   }
+  #logo{width: 50%;}
   .item3 {
     width: 190px;
   }
   .item4 {
     width: 300px;
-  }
+    }
   .item4 i {
     font-size: 30px;
     position: absolute;
@@ -233,7 +234,7 @@ p {
     right: 0;
   }
   .item5 {
-    width: 400px;
+    width: 350px;
   }
   .item7 {
     grid-column:1 / span 3;
@@ -250,12 +251,16 @@ p {
     grid-row: 9;
   }
   .item11 {
-    grid-row: 10;
+    grid-column: 1 / span 3;
+    grid-row: 11;
+   
   }
   .item12 {
+    grid-column: 1 / span 3;
     grid-row: 10;
+    text-align: center;
   }
   .item13 {
-    grid-row: 11;
+    grid-row: 12;
   }
 }

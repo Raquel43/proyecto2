@@ -7,7 +7,6 @@ body {
   margin: 0;
   font-size: 1rem;
   overflow-x: hidden;
-  position: relative;
 }
 
 ul {
@@ -30,11 +29,11 @@ ul {
   left: 0;
   width: 100%;
   height: 100vh;
-  overflow: hidden;
 }
 .header-video {
   min-width: 100%;
-  min-height: 100%;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 .header-content {
@@ -117,11 +116,13 @@ main p {
 main img {
   border: 5px solid black;
   border-radius: 100%;
+  flex-wrap: wrap;
 }
 main #fotos {
   padding-left: 40px;
   margin-top: 20px;
   display: flex;
+ 
 }
 
 main img:hover {
@@ -185,7 +186,6 @@ footer a {
   font: bold 1.1rem "Open Sans", "Arial";
   border: solid 1px black;
   border-radius: 7px;
-  
 }
 #cookie-info button:hover {
   color: yellow;
@@ -198,7 +198,7 @@ footer a {
 #btn-aceptar-cookie {
   background: chocolate;
 }
-#btn-declinar-cookie{
+#btn-declinar-cookie {
   background: crimson;
 }
 
@@ -206,10 +206,10 @@ footer a {
   .espacio {
     padding-left: 0;
   }
-  main #fotos {
-    margin-right: 150px;
-  }
 
+  .header-video {
+    overflow: visible;
+  }
   main img {
     width: 40%;
   }
@@ -232,8 +232,39 @@ footer a {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   main img {
-    width: 100%;
+    width: 50%;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+main #fotos{
+  flex-wrap: wrap;
+}
+
+  main p {
+    margin-right: 200px;
+  }
+
+  footer{
+  display: block;
+    height: auto;
+  }
+nav{
+  height: auto;
+}
+
+  nav ul li {
+    display: block;
+  }
+
+  .espacio{position: absolute; left: 0; top: 80px;}
+
+  #cookie-info {
+  width: 20%;
+  }
+  #botones {
+    text-align: start;
   }
 }

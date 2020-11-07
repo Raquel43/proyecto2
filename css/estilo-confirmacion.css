@@ -231,6 +231,14 @@ input {
 }
 
 @media (max-width: 960px) {
-
+  nav{
+    height: auto;
+  }
+  
+    nav ul li {
+      display: block;
+    }
+  
+    .espacio{position: absolute; left: 0; top: 120px;}
   }
 

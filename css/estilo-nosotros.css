@@ -201,3 +201,37 @@ input {
 #nosotros {
   min-height: calc(100vh - 76vh - 50px);
 }
+@media (max-width: 650px) {
+  main img {
+    width: 50%;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  main p {
+    margin-right: 200px;
+  }
+footer{
+  flex-wrap: wrap;
+  height: auto;
+}
+
+ 
+nav{
+  height: auto;
+}
+
+  nav ul li {
+    display: block;
+  }
+
+  .espacio{position: absolute; left: 0; top: 120px;}
+
+  #cookie-info {
+  width: 20%;
+  }
+  #botones {
+    text-align: start;
+  }
+}
