@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  font-size: 1rem;
+  overflow-x: hidden;
+  position: relative;
+}
+
+ul {
+  margin: 0;
+}
+
+.header {
+  height: 100vh;
+  display: flex;
+  color: #fff;
+}
+
+#barra-navegacion {
+  display: flex;
+}
+
+.header-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.header-video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.header-content {
+  z-index: 2;
+}
+
+.logo {
+  height: 76px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 100vw;
+  height: 76px;
+  flex-flow: row wrap;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0px 20px;
+}
+nav ul li a {
+  font-family: "Ubuntu";
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.espacio {
+  padding-left: 290px;
+}
+
+.social {
+  font-size: 2rem;
+}
+
+.social:hover {
+  font-size: 2.5rem;
+}
+
+.fa-facebook {
+  color: blue;
+}
+.fa-twitter {
+  color: rgb(72, 128, 233);
+}
+.fa-youtube {
+  color: crimson;
+}
+.fa-instagram-square {
+  color: rgb(255, 81, 0);
+}
+.menu:hover {
+  border-bottom: dotted 2px #232d60;
+}
+
+main {
+  display: block;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.header-content h1 {
+  text-align: center;
+  margin-right: 160px;
+  font-size: 50px;
+  margin-bottom: 0;
+  font-family: "ubuntu";
+}
+
+main p {
+  font-size: 1.5rem;
+  display: block;
+  padding-bottom: 2rem;
+}
+
+main img {
+  border: 5px solid black;
+  border-radius: 100%;
+}
+main #fotos {
+  padding-left: 40px;
+  margin-top: 20px;
+  display: flex;
+}
+
+main img:hover {
+  filter: grayscale(100%);
+}
+main p {
+  font-family: "ubuntu";
+}
+.pequeño {
+  font-size: 15px;
+}
+
+main a {
+  font-family: "Ubuntu";
+  color: white;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer p {
+  font-size: 1.05rem;
+}
+
+footer a {
+  color: white;
+}
+
+.sombra {
+  box-shadow: 5px 10px 20px grey;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 100px;
+}
+/* Cookies fixed panel*/
+/*--------------------------*/
+#cookie-info {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  border: solid 1px #53565a;
+  color: black;
+}
+
+#cookie-info button {
+  color: white;
+  padding: 10px 40px;
+  line-height: 40px;
+  font: bold 1.1rem "Open Sans", "Arial";
+  border: solid 1px black;
+  border-radius: 7px;
+  
+}
+#cookie-info button:hover {
+  color: yellow;
+  cursor: pointer;
+}
+
+#botones {
+  text-align: end;
+}
+#btn-aceptar-cookie {
+  background: chocolate;
+}
+#btn-declinar-cookie{
+  background: crimson;
+}
+
+@media (max-width: 1000px) {
+  .espacio {
+    padding-left: 0;
+  }
+  main #fotos {
+    margin-right: 150px;
+  }
+
+  main img {
+    width: 40%;
+  }
+
+  main {
+    text-align: center;
+    margin-right: 30px;
+  }
+
+  footer {
+    position: sticky;
+    bottom: 0;
+  }
+  #mover {
+    margin-right: 150px;
+  }
+
+  main {
+    min-height: calc(100vh - 76vh - 50px);
+  }
+}
+
+@media (max-width: 600px) {
+  main img {
+    width: 100%;
+  }
+}

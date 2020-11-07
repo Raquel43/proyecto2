@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilo-contacto.css">
+  <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&family=Ubuntu&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <title>Jaime Rodríguez</title>
+</head>
+
+<body>
+  <div id="barra-navegacion" class="sombra">
+    <a href="index.html"><img src="img/logo2.png" class="logo" alt=""> </a>
+    <nav #navegacion>
+
+      <ul>
+        <li class="menu"><a href="index.html"></i>Inicio</a></li>
+        <li class="menu"><a href="nosotros.html">Sobre Nosotros</a></li>
+        <li class="menu"><a href="contacto.html">Contacto</a></li>
+        <li class="menu"><a href="newsletter.html">Newsletter</a></li>
+        <li class="menu"><a href="proyectos.html">Proyectos</a></li>
+      </ul>
+      <ul class="espacio">
+        <li class="social"><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+        </li>
+        <li class="social"><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        <li class="social"><a href="https://www.youtube.com/?gl=ES&hl=es" target="_blank"><i
+              class="fab fa-youtube"></i></a></li>
+        <li class="social"><a href="https://www.instagram.com/" target="_blank"><i
+              class="fab fa-instagram-square"></i></a></li>
+      </ul>
+    </nav>
+  </div>
+  <main>
+    <div>
+      <form action="confirmacion.html" method="POST">
+        <fieldset>
+          <legend>Formulario de Contacto</legend>
+          <label>Nombre:</label>
+          <input type="text" name="nombre-cliente" placeholder="Pon tu nombre" />
+<br>
+          <label>Apellidos:</label>
+          <input type="text" name="apellidos-cliente" placeholder="Pon tus apellidos" /><br />
+          <label>Edad:</label><input type="number" name="Edad" min="18" max="100" maxlength="3"><br />
+          <label>Fecha nacimiento:</label><input type="date" name="fecha-nacimiento"><br />
+
+          <label>Email:</label>
+          <input type="email" name="email-cliente" size="40" placeholder="tuemail@dominio.com" required><br />
+
+          <label>Teléfono:</label><input type="tel" name="telefono-cliente" maxlength="9"><br />
+          <label>Asunto:</label>
+          <select name="asunto">
+            <option value="web">Paginas Web</option>
+            <option value="red">Instalación Red</option>
+            <option value="datos">Bases de datos</option>
+            <option value="equipos">Reparación equipos</option>
+            <option value="programas">Instalación programas</option>
+            <option value="sistema">Limpieza del sistema</option>
+            <option value="virus">Antivirus</option>
+            <option value="Otros">Otros</option>
+          </select>
+          </p>
+
+          <label>Comentario:</label><br />
+          <textarea name="comentario" id=coment"" cols="50" rows="10"></textarea><br />
+          <button id="botonEnviar" type="submit">Enviar datos</button>
+          <button id="botonReset" type="reset">Borrar datos</button>
+        </fieldset>
+      </form>
+    </div>
+    <div id="donde">
+      <h1>Donde encontrarnos:</h1>
+      <h2>DigitalEvolution SA</h2>
+      <p>Calle Salvador Dalí, 3. 07011 Palma de Mallorca. Illes Balears.</p>
+      <p>Teléfono <a href="tel:+34971457710">971 45 77 10</a></p>
+      <p>email <a href="mailto:rat00@iesemilidarder.com">rat00@iesemilidarder.com</a></p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3074.9047056783784!2d2.630620715645691!3d39.58429801376636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129792897cb4adfd%3A0x2ae3087f5b4b21a2!2sIES%20Emili%20Darder!5e0!3m2!1ses!2ses!4v1604654600995!5m2!1ses!2ses"
+        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+    </div>
+  </main>
+  <footer>
+    <p>Copyright &copy; Raquel Arqués Toro 2020</p>
+    <p>Proyecto 1 Lenguaje de Marcas</p>
+    <p>Video by Pressmaster from <a href="https://www.pexels.com/">Pexels</a></p>
+</body>
+
+</html>

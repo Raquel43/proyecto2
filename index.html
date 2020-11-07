@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&family=Ubuntu&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+</head>
+
+<body>
+  <header class="header content">
+    <div class="header-video">
+      <video autoplay=autoplay muted="muted" loop=loop>
+        <source src="video/video.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="header-overlay"></div>
+
+    <div class="header-content">
+      <div id="barra-navegacion">
+        <a href=""><img src="img/logo2.png" class="logo" alt=""> </a>
+        <nav #navegacion>
+
+          <ul>
+            <li class="menu"><a href="index.html"></i>Inicio</a></li>
+            <li class="menu"><a href="nosotros.html">Sobre Nosotros</a></li>
+            <li class="menu"><a href="contacto.html">Contacto</a></li>
+            <li class="menu"><a href="newsletter.html">Newsletter</a></li>
+            <li class="menu"><a href="proyectos.html">Proyectos</a></li>
+          </ul>
+          <ul class="espacio">
+            <li class="social"><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li class="social"><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li class="social"><a href="https://www.youtube.com/?gl=ES&hl=es" target="_blank"><i
+                  class="fab fa-youtube"></i></a></li>
+            <li class="social"><a href="https://www.instagram.com/" target="_blank"><i
+                  class="fab fa-instagram-square"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+      <main>
+        <h1>Nuestro Equipo</h1>
+        <div id="fotos">
+          <div><a href="#"><img src="img/cara1.jpg" width="50%" alt="">
+              <p>Jaime Rodríguez</p>
+            </a>
+            <p class="pequeño">Tecnico informatico</p>
+          </div>
+          <div><a href="#"><img src="img/yo.jpg" width="50%" alt="">
+              <p>Raquel Arqués</p>
+            </a>
+            <p class="pequeño">Desarrolladora web</p>
+          </div>
+          <div><a href="#"><img src="img/cara3.jpg" width="50%" alt="">
+              <p>Paula Ferreries</p>
+            </a>
+            <p class="pequeño">Gestora de Base de datos</p>
+          </div>
+          <div id="cristina"><a href="#"><img src="img/cara4.jpg" width="50%" alt="">
+              <p>Cristina Sanpedro</p>
+            </a>
+            <p class="pequeño">Especialista en SEO</p>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>Copyright &copy; Raquel Arqués Toro 2020</p>
+        <p>Proyecto 1 Lenguaje de Marcas</p>
+        <p id="mover">Video by Pressmaster from <a href="https://www.pexels.com/">Pexels</a></p>
+      </footer>
+      <div id="cookie-info">
+        <h3>Sobre las cookies de este lugar</h3>
+        <p>
+          Nuestra página web utiliza cookies y otras tecnologias para personalizar su experiencia y comprender como
+          usted y otros visitantes utilizan el lugar. Para ver una lista completa de las empresas que utilizan estas
+          cookies y otras tecnologias, y confirmarnos si las podemos utilizar o no en su dispositivo, acceda a nuestro
+          enlace de consentimiento de cookies.
+        </p>
+        <p>
+          Cuando accede a nuestra página web, las empresas enumeradas en el enlace de consentimiento de cookies utilizaran cookies y otras tecnologias. Consulte nuestra notificación sobre cookies para obtener información adicional.
+        </p> <a href="#">Más información</a>
+
+        <div id="botones">
+          <button id="btn-aceptar-cookie" type="button">Aceptar</button>
+          <button id="btn-declinar-cookie" type="button">Declinar</button>
+       
+          
+        </div>
+      </div>
+
+      <script>
+        document
+          .getElementById("btn-aceptar-cookie")
+          .addEventListener("click", function () {
+            document.getElementById("cookie-info").style.display = "none";
+          });
+
+        document
+          .getElementById("btn-declinar-cookie")
+          .addEventListener("click", function () {
+            document.getElementById("cookie-info").style.display = "none";
+          });
+      </script>
+    </div>
+
+  </header>
+
+</body>
+
+</html>
