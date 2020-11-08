@@ -301,9 +301,12 @@ nav{
   }
   main form fieldset {
     padding-left: 20px;
-    padding-right: 10px;
+    padding-right: 5px;
    padding-bottom: 40px;
     margin-bottom: 100px;
+  }
+  #mail{
+    width: 200px;
   }
   main p{
     width: 110%;
