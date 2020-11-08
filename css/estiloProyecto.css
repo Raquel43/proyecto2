@@ -123,6 +123,10 @@ header .categorias a.activo {
 	transition: opacity 0.5s linear 1s;
 }
 
+.grid img{
+	border: 5px solid black;
+	border-radius: 20px;
+}
 .grid.imagenes-cargadas {
 	opacity: 1;
 }
