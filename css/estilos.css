@@ -233,7 +233,8 @@ footer a {
 
 @media (max-width: 650px) {
   body{
-    
+    max-width: 50vw;
+    max-height: 50vh;
   }
   main img {
     width: 20%;
