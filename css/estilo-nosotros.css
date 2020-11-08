@@ -228,10 +228,5 @@ nav{
 
   .espacio{position: absolute; left: 0; top: 120px;}
 
-  #cookie-info {
-  width: 20%;
-  }
-  #botones {
-    text-align: start;
-  }
+ 
 }
