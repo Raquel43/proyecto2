@@ -291,6 +291,7 @@ nav{
 
   nav ul li {
     display: block;
+    margin-left:0;
   }
 
   .espacio{position: absolute; left: 0; top: 120px;}

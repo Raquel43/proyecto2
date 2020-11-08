@@ -202,6 +202,9 @@ input {
   min-height: calc(100vh - 76vh - 50px);
 }
 @media (max-width: 650px) {
+  main{
+    padding-top: 3px;
+  }
   main img {
     width: 50%;
     padding: 0;
@@ -211,6 +214,7 @@ input {
 
   main p {
     margin-right: 200px;
+   
   }
 footer{
   flex-wrap: wrap;
@@ -224,6 +228,7 @@ nav{
 
   nav ul li {
     display: block;
+    margin-left:0;
   }
 
   .espacio{position: absolute; left: 0; top: 120px;}
