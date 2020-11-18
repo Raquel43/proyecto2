@@ -1,0 +1,297 @@
+@import url(normalize.css);
+@font-face {
+  font-family: "FuenteTitulo";
+  src: url("Big_Shoulders_Stencil_Text/BigShouldersStencilText-Light.ttf");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(19, 19, 29);
+  font-family: "Ubuntu", sans-serif;
+}
+#page {
+  background-color: rgb(19, 19, 29);
+  width: 90%;
+  margin: auto;
+  margin-top: 80px;
+}
+
+main > div {
+  padding: 50px 20px;
+  width: 50%;
+  color: white;
+  background: linear-gradient(
+    38deg,
+    rgba(15, 23, 30, 1) 0%,
+    rgba(15, 23, 30, 1) 41%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+main h1 {
+  font-family: "FuenteTitulo";
+  letter-spacing: 10px;
+}
+main #parrafo {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  line-height: 1.5rem;
+}
+
+nav {
+  background: linear-gradient(
+    90deg,
+    rgba(26, 35, 46, 1) 0%,
+    rgba(25, 36, 46, 1) 29%,
+    rgba(35, 52, 68, 1) 66%,
+    rgba(26, 35, 46, 1) 100%
+  );
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+nav a {
+  display: inline;
+  color: white;
+}
+
+.item-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.submenu {
+  border: solid 1px #ccc;
+  padding: 10px;
+  width: 200px;
+  background-color: rgb(57, 13, 99);
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.submenu a {
+  line-height: 1.5rem;
+  color: white;
+}
+
+.item-menu:hover .submenu {
+  display: block;
+}
+
+nav a {
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+form {
+  margin-left: 250px;
+  display: inline-block;
+}
+form input {
+  width: 300px;
+  background-color: #1a232e;
+  border: 1px solid white;
+  padding: 7px 5px;
+}
+
+form input::placeholder {
+  color: white;
+}
+
+#usuario {
+  background-color: rgb(69, 69, 236);
+  border-radius: 10px;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+}
+main {
+  background-image: url("../img/bg-film.png");
+  background-position: center;
+  background-size: cover;
+}
+
+#sub {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(168, 164, 164);
+  font-weight: bolder;
+  width: 60%;
+  font-size: 15px;
+  flex-wrap: wrap;
+}
+
+.bordeFino {
+  border: 1px solid rgb(168, 164, 164);
+}
+
+#girado {
+  color: grey;
+  transform: rotate(-90deg);
+  position: absolute;
+  right: -20px;
+  top: 500px;
+  font-size: 13px;
+}
+#listas {
+  display: grid;
+  grid-template-columns: auto auto; /*2columnas*/
+  line-height: 2;
+  margin-bottom: 20px;
+}
+
+#listas ul.blue {
+  margin-left: 30px;
+}
+
+nav > ul > li {
+  display: inline;
+  list-style: none;
+}
+
+.blue {
+  color: blue;
+}
+
+.gris{
+  color: rgb(168, 164, 164);
+}
+
+#botones {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#botones button {
+  background-color: rgb(90, 90, 129);
+  border: none;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#botones button.primero {
+  margin-left: 0;
+  display: flex;
+  align-items: center;
+}
+section {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 0;
+}
+
+section h2 {
+  color: white;
+  text-align: center;
+}
+
+section hr {
+  margin-bottom: 20px;
+}
+#grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto; /*4columnas*/
+  gap: 5px;
+  margin: auto;
+}
+#grid-container img {
+  width: 90%;
+  cursor: pointer;
+}
+footer {
+  background-color: #1a232e;
+}
+
+#logo {
+  text-align: center;
+}
+footer p {
+  text-align: center;
+  display: inline-block;
+  color: white;
+  margin-left: 20px;
+}
+footer .center {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.fa-search,
+.fa-user,
+.fa-youtube-square,
+.fa-download {
+  color: white;
+}
+.fa-play-circle {
+  font-size: 40px;
+}
+@media (max-width: 700px) {
+  nav {
+    display: block;
+    line-height: 1.5;
+  }
+
+  nav > ul > li {
+    display: block;
+    text-align: center;
+  }
+
+  form {
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  form button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #page {
+    margin-top: 220px;
+  }
+
+  main {
+    overflow: hidden;
+  }
+  main > div {
+    width: 100%;
+  }
+  #sub {
+    width: 100%;
+  }
+
+  #listas {
+    display: grid;
+    grid-template-columns: auto; /*1columna*/
+  }
+
+  #botones {
+    width: 100%;
+    display: block;
+  }
+
+  #botones button {
+    margin-top: 10px;
+    padding: auto;
+    text-align: center;
+    width: 200px;
+  }
+
+  #grid-container {
+    display: grid;
+    grid-template-columns: auto; /*1columna*/
+    width: 100%;
+    text-align: center;
+  }
+}
