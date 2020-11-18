@@ -91,9 +91,12 @@ nav a {
   padding: 10px 20px;
   text-decoration: none;
 }
+nav > ul {
+  margin-left: 100px;
+}
 
 form {
-  margin-left: 250px;
+  margin-left: 90px;
   display: inline-block;
 }
 form input {
@@ -163,7 +166,7 @@ nav > ul > li {
   color: blue;
 }
 
-.gris{
+.gris {
   color: rgb(168, 164, 164);
 }
 
@@ -243,12 +246,17 @@ footer .center {
     line-height: 1.5;
   }
 
+  nav > ul {
+    margin-left: 0;
+  }
+
   nav > ul > li {
     display: block;
     text-align: center;
   }
 
   form {
+    display: block;
     margin: 0;
     margin-bottom: 10px;
     text-align: center;
